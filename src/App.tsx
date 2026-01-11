@@ -52,14 +52,26 @@ function App() {
     }, 1000);
   }, []);
 
-  const handleLocationByCoords = useCallback((lat: number, lon: number) => {
+  const handleLocationByCoords = useCallback(async (lat: number, lon: number) => {
     setLoading(true);
-    setTimeout(() => {
-      const data = getMockWeatherByCity("Your Location");
-      setWeather({ ...data, lat, lon });
+    try {
+      // Reverse geocode to get the actual city name
+      const response = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
+      );
+      const data = await response.json();
+      const cityName = data.address.city || data.address.town || data.address.village || data.address.suburb || "Local Area";
+
+      const weatherData = getMockWeatherByCity(cityName);
+      setWeather({ ...weatherData, lat, lon });
+    } catch (error) {
+      console.error("Reverse geocoding error:", error);
+      const fallbackData = getMockWeatherByCity("Local Area");
+      setWeather({ ...fallbackData, lat, lon });
+    } finally {
       setLoading(false);
       updateTimestamp();
-    }, 1000);
+    }
   }, []);
 
 
