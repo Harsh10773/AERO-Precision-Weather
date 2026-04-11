@@ -7,7 +7,7 @@
 
 **AERO** is a high-performance, aesthetically driven weather application built for the modern web. Inspired by Swiss Minimalist design principles and the "Bento Grid" layout, AERO provides a dense yet breathable information architecture that prioritizes typographic hierarchy and atmospheric visual feedback.
 
-## ✨ Technical Excellence
+##  Technical Excellence
 
 - **Framework**: React 19 (Vite) for sub-second build times and HMR.
 - **Styling**: Tailwind CSS v4 utilizing the new JIT engine for granular design control without the bloat.
@@ -15,14 +15,14 @@
 - **Mapping**: React-Leaflet integration with custom conic-gradient radar overlays and interactive location sync.
 - **State Management**: Robust React Hooks and Functional Programming patterns for optimized re-renders.
 
-## 🎨 Design Philosophy: "Swiss Minimalism"
+##  Design Philosophy: "Swiss Minimalism"
 
 - **Negative Space**: Strategic use of padding and margins to prevent data clutter.
 - **Typographic Hierarchy**: Large, semi-bold sans-serif fonts for primary metrics (Temperature, City) contrasting with monospaced tracking for secondary metadata.
 - **Atmospheric Feedback**: A dynamic background "glow" system that shifts color based on weather conditions (Sunny, Rain, Cloudy), providing an immediate emotional context to the data.
 - **Glassmorphism**: High-transparency solid surfaces with `backdrop-blur-md` and `1px` translucent borders for depth and elevation.
 
-## 🚀 Key Features
+##  Key Features
 
 - **Geolocation**: Real-time user position detection via browser API.
 - **Worldwide Search**: Debounced city search with deterministic mock data generation for demo purposes.
@@ -34,7 +34,7 @@
   - **Critical Alerts**: High-urgency zone for weather advisories.
   - **Metric Deep-Dive**: Air Quality, UV Index, Humidity, Visibility, and Pressure widgets.
 
-## 📦 Project Structure
+##  Project Structure
 
 ```text
 src/
@@ -71,4 +71,4 @@ src/
 
 ---
 
-Developed with Precision by **Antigravity AI**
+
