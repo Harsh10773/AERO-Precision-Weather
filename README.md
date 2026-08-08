@@ -37,6 +37,9 @@ https://aero-weather.netlify.app/
   - **Critical Alerts**: High-urgency zone for weather advisories.
   - **Metric Deep-Dive**: Air Quality, UV Index, Humidity, Visibility, and Pressure widgets.
 
+<img width="1680" height="958" alt="image" src="https://github.com/user-attachments/assets/a4febf78-6920-44b1-96b8-5fe8f07c6c83" />
+
+
 ##  Project Structure
 
 ```text
