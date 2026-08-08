@@ -7,6 +7,9 @@
 
 **AERO** is a high-performance, aesthetically driven weather application built for the modern web. Inspired by Swiss Minimalist design principles and the "Bento Grid" layout, AERO provides a dense yet breathable information architecture that prioritizes typographic hierarchy and atmospheric visual feedback.
 
+# Live Demo
+https://aero-weather.netlify.app/
+
 ##  Technical Excellence
 
 - **Framework**: React 19 (Vite) for sub-second build times and HMR.
